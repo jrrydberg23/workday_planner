@@ -20,3 +20,27 @@ $each(timeBlock, function (i, hour) {
     }
 });
 
+// Saves text to local storage
+$(".saveBtn").on("click", function() {
+    var value = $(this).siblings("text-area").val();
+    var time = $(this).parent().attr("id");
+    localStorage.setItem(time, value);
+});
+
+$("#9 .row time-block").val(localStorage.getItem("9"));
+
+$("#10 .row time-block").val(localStorage.getItem("10"));
+
+$("#11 .row time-block").val(localStorage.getItem("11"));
+
+$("#12 .row time-block").val(localStorage.getItem("12"));
+
+$("#1 .row time-block").val(localStorage.getItem("13"));
+
+$("#9 .row time-block").val(localStorage.getItem("14"));
+
+$("#9 .row time-block").val(localStorage.getItem("15"));
+
+$("#9 .row time-block").val(localStorage.getItem("16"));
+
+$("#9 .row time-block").val(localStorage.getItem("17"));
